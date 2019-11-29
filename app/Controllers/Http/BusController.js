@@ -66,9 +66,6 @@ class BusController {
       var time=data.time;
       var date=data.date;
       var destination=data.destination;
-      console.log("time "+time);
-      console.log("date "+date);
-      console.log("destination "+destination);
       bus.merge({
         time:time,
         date:date,
