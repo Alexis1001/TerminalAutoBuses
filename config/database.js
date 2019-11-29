@@ -30,7 +30,7 @@ module.exports = {
   | npm i --save sqlite3
   |
   */
-  sqlite: {
+  /*sqlite: {
     client: 'sqlite3',
     connection: {
       filename: Helpers.databasePath(`${Env.get('DB_DATABASE', 'development')}.sqlite`)
@@ -49,7 +49,7 @@ module.exports = {
   | npm i --save mysql
   |
   */
-  mysql: {
+  /*mysql: {
     client: 'mysql',
     connection: {
       host: Env.get('DB_HOST', 'localhost'),
@@ -80,6 +80,5 @@ module.exports = {
       password: Env.get('DB_PASSWORD',DATABASE_URL.password),
       database: Env.get('DB_DATABASE',DATABASE_URL.pathname.substr(1))
     },
-    debug: Env.get('DB_DEBUG', false)
   }
 }
