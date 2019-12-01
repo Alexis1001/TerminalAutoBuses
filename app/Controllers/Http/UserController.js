@@ -9,8 +9,6 @@ class UserController {
  
   async index ({ request, response, view }) {
   }
-
-
   async store ({ request, response, view }) {
     const data=request.all();
 

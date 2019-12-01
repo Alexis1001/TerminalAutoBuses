@@ -26,11 +26,8 @@ class HistoryController {
     
     return response.json({bus});
   }
-
-
   async create ({ request, response, view }) {
   }
-
   async store ({ request, response,auth }) {
     const user = await auth.getUser();
     const data=request.all();

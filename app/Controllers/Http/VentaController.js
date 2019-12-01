@@ -26,13 +26,7 @@ class VentaController {
     .select('ventas.nameBus','ventas.occupiedSeats','ventas.typeSeat',
     'ventas.freeSeats','ventas.specialFreeSeats','ventas.totalSeatsSold',
     'ventas.date','ventas.bus_id');
-    
     return response.json({solds});
-      
-      
-  }
-
-  async create ({ request, response, view }) {
   }
 
   async store ({ request, response ,auth}) {
@@ -85,17 +79,6 @@ class VentaController {
     
   }
 
-  async show ({ params, request, response, view }) {
-  }
-
-  async edit ({ params, request, response, view }) {
-  }
-
-  async update ({ params, request, response }) {
-  }
-
-  async destroy ({ params, request, response }) {
-  }
 }
 
 module.exports = VentaController

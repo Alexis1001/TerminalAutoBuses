@@ -78,22 +78,11 @@ class BusController {
      
   }
 
-  async store ({ request, response }) {
-  }
-
   async show ({ params, request, response,auth }) {
     const user = await auth.getUser();
     const id=params.id;
     const bus=await Bus.find(id);
     return response.json({bus});
-  }
-
-  async edit ({ params, request, response, view }) {
-  }
-
-  
-
-  async destroy ({ params, request, response }) {
   }
 
 
