@@ -45,9 +45,6 @@ class HistoryController {
   async show ({ params, request, response, view }) {
   }
 
-  async edit ({ params, request, response, view }) {
-  }
-
   async update ({ params, request, response }) {
   }
 
